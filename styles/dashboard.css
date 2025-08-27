@@ -1,0 +1,168 @@
+ /* Dashboard Specific Styles */
+.dashboard-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.status-overview {
+    margin-bottom: 3rem;
+}
+
+.status-overview h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.status-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.status-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.status-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.status-card .count {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.status-card .percentage {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Card Colors */
+.operational {
+    border-top: 4px solid var(--success-color);
+}
+
+.incidents {
+    border-top: 4px solid var(--danger-color);
+}
+
+.fines {
+    border-top: 4px solid var(--warning-color);
+}
+
+.response {
+    border-top: 4px solid var(--secondary-color);
+}
+
+/* Recent Incidents */
+.recent-incidents {
+    margin-bottom: 3rem;
+}
+
+.recent-incidents h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.incidents-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Status Badges */
+.resolved {
+    color: var(--success-color);
+    font-weight: 500;
+}
+
+.pending {
+    color: var(--warning-color);
+    font-weight: 500;
+}
+
+/* Buttons */
+.view-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-bottom: 2rem;
+}
+
+.quick-actions h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.action-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+.action-btn i {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theft Detection System - TT Information</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tt-info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Theft Detection System Logo">
+            <h1>Theft Detection System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="tt-info.html" class="active"><i class="fas fa-train"></i> TT Information</a></li>
+                <li><a href="mechanics.html"><i class="fas fa-tools"></i> Mechanics</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tt-info-main">
+        <section class="search-section">
+            <h2>Train Time Table Information</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search by Train Number or Name">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </section>
+
+        <section class="train-list">
+            <div class="train-card">
+                <div class="train-header">
+                    <h3>Rajdhani Express (12305)</h3>
+                    <span class="status on-time">On Time</span>
+                </div>
+                <div class="train-details">
+                    <div class="detail">
+                        <span class="label">Departure:</span>
+                        <span class="value">17:05 (Delhi)</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Arrival:</span>
+                        <span class="value">08:30 (Mumbai)</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Duration:</span>
+                        <span class="value">15h 25m</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Facilities:</span>
+                        <span class="value">24 Coaches (12 with TDS)</span>
+                    </div>
+                </div>
+                <div class="train-actions">
+                    <button class="view-btn">View Facilities</button>
+                    <button class="incident-btn">Report Incident</button>
+                </div>
+            </div>
+
+            <div class="train-card">
+                <div class="train-header">
+                    <h3>Shatabdi Express (12005)</h3>
+                    <span class="status delayed">Delayed by 35m</span>
+                </div>
+                <div class="train-details">
+                    <div class="detail">
+                        <span class="label">Departure:</span>
+                        <span class="value">06:00 (Chennai)</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Arrival:</span>
+                        <span class="value">13:15 (Bangalore)</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Duration:</span>
+                        <span class="value">7h 15m</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Facilities:</span>
+                        <span class="value">18 Coaches (8 with TDS)</span>
+                    </div>
+                </div>
+                <div class="train-actions">
+                    <button class="view-btn">View Facilities</button>
+                    <button class="incident-btn">Report Incident</button>
+                </div>
+            </div>
+
+            <div class="train-card">
+                <div class="train-header">
+                    <h3>Duronto Express (12245)</h3>
+                    <span class="status on-time">On Time</span>
+                </div>
+                <div class="train-details">
+                    <div class="detail">
+                        <span class="label">Departure:</span>
+                        <span class="value">22:40 (Howrah)</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Arrival:</span>
+                        <span class="value">07:15 (New Delhi)</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Duration:</span>
+                        <span class="value">8h 35m</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Facilities:</span>
+                        <span class="value">22 Coaches (15 with TDS)</span>
+                    </div>
+                </div>
+                <div class="train-actions">
+                    <button class="view-btn">View Facilities</button>
+                    <button class="incident-btn">Report Incident</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Developing innovative solutions for railway safety and facility protection.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="tt-info.html">TT Information</a></li>
+                    <li><a href="mechanics.html">Mechanics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@theftdetection.com</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Theft Detection System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
