@@ -1,0 +1,178 @@
+/* style.css */
+:root {
+  --primary: #FFD700;
+  --primary-dark: #FFC300;
+  --secondary: #FF5733;
+  --dark: #333333;
+  --light: #FFFFFF;
+  --gray: #f5f5f5;
+  --border-radius: 12px;
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #FFD700 0%, #FF5733 100%);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+.form-container {
+  width: 100%;
+  padding: 40px 30px;
+  background-color: var(--light);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.form-container.active {
+  opacity: 1;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.food-symbol {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.form-container h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: var(--secondary);
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  color: var(--dark);
+  background-color: var(--gray);
+  transition: var(--transition);
+}
+
+.form-group label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+  outline: none;
+  background-color: var(--light);
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 12px;
+  font-size: 14px;
+  color: var(--secondary);
+  background-color: var(--light);
+  padding: 0 8px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--secondary);
+  color: var(--light);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--dark);
+}
+
+.form-footer a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.form-footer a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 520px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+  }
+  
+  .food-symbol {
+    font-size: 50px;
+  }
+}
